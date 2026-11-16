@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rana Usama — Junior DevOps Engineer portfolio. AWS, Linux, Docker, Nginx and cloud deployment projects.">
+  <title>Rana Usama | Junior DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">RU</span><span>Rana Usama<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> OPEN TO JUNIOR DEVOPS OPPORTUNITIES</div>
+        <p class="mono intro-label">HELLO, WORLD! I'M</p>
+        <h1>Rana <span>Usama</span></h1>
+        <h2>Junior DevOps Engineer</h2>
+        <p class="hero-description">I enjoy building, automating, and deploying reliable applications. I’m developing hands-on experience with cloud infrastructure, Linux systems, containers, and CI/CD workflows.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta"><span><i></i> Based in Faisalabad, Pakistan</span><span class="mono">BUILD • LEARN • AUTOMATE</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="terminal-card">
+          <div class="terminal-top"><div class="window-dots"><b></b><b></b><b></b></div><span class="mono">usama@devops: ~</span><span>•••</span></div>
+          <div class="terminal-body mono">
+            <p><span class="muted">01</span> <span class="green">$</span> whoami</p>
+            <p class="terminal-output">Rana Usama</p>
+            <p><span class="muted">02</span> <span class="green">$</span> role --current</p>
+            <p class="terminal-output">Junior DevOps Engineer</p>
+            <p><span class="muted">03</span> <span class="green">$</span> tools --list</p>
+            <p class="terminal-output">linux · docker · aws · git</p>
+            <p><span class="muted">04</span> <span class="green">$</span> status</p>
+            <p class="terminal-output status-line"><span class="status-dot"></span> Learning & building</p>
+            <p class="prompt-line"><span class="green">$</span> <span class="cursor"></span></p>
+          </div>
+        </div>
+        <div class="floating-chip chip-aws">☁ AWS</div><div class="floating-chip chip-docker">▣ Docker</div><div class="floating-chip chip-linux">⌘ Linux</div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading"><p class="mono section-index">01 / ABOUT</p><h2>Turning curiosity into <span>practical skills.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead">I’m a Software Engineering graduate focused on starting my career in DevOps and cloud engineering.</p>
+        <div class="about-copy"><p>My learning approach is hands-on: understand a tool, practise it in a real environment, and document what I build. I have worked with Linux, Docker, Git, Nginx, AWS EC2 and IAM, and I’m continuing to strengthen my CI/CD skills.</p><p>Currently, I’m building practical cloud projects through my learning journey with Codomax Digital Solutions.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><p class="mono section-index">02 / TOOLKIT</p><h2>Tools I work <span>with.</span></h2></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-icon">⌘</span><h3>Linux</h3><p>Command line, permissions, services and server basics</p><span class="skill-tag">SYSTEMS</span></article>
+        <article class="skill-card"><span class="skill-icon">▣</span><h3>Docker</h3><p>Images, containers, volumes, networks and Compose</p><span class="skill-tag">CONTAINERS</span></article>
+        <article class="skill-card"><span class="skill-icon">☁</span><h3>AWS</h3><p>IAM, EC2, S3 fundamentals and cloud deployment</p><span class="skill-tag">CLOUD</span></article>
+        <article class="skill-card"><span class="skill-icon">⎇</span><h3>Git & GitHub</h3><p>Version control, repositories and collaboration basics</p><span class="skill-tag">VERSION CONTROL</span></article>
+        <article class="skill-card"><span class="skill-icon">⇄</span><h3>CI/CD</h3><p>Learning pipeline concepts and Jenkins fundamentals</p><span class="skill-tag">AUTOMATION</span></article>
+        <article class="skill-card"><span class="skill-icon">◈</span><h3>Nginx</h3><p>Web server setup and static website hosting</p><span class="skill-tag">WEB SERVERS</span></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading"><p class="mono section-index">03 / SELECTED WORK</p><h2>Learning by <span>building.</span></h2></div>
+      <div class="project-list">
+        <article class="project-card featured">
+          <div class="project-top"><span class="project-number mono">PROJECT 01</span><span class="project-status"><i></i> DEPLOYED</span></div>
+          <div class="project-content"><div><p class="mono project-type">CLOUD • AWS</p><h3>AWS IAM & EC2 Web Server</h3><p>Launched an EC2 instance on Amazon Linux 2023, configured network access, set up Nginx, deployed a custom web page, and configured HTTPS using Let's Encrypt and Certbot.</p><div class="tags"><span>AWS EC2</span><span>IAM</span><span>Linux</span><span>Nginx</span><span>Certbot</span></div></div><div class="project-links"><a href="https://github.com/developmentoperation69/codomax-aws-iam-ec2" target="_blank" rel="noreferrer">GitHub repository ↗</a><a href="https://3.24.177.206/" target="_blank" rel="noreferrer">Live demo ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number mono">PROJECT 02</span><span class="project-status status-learning"><i></i> PRACTICE</span></div>
+          <div class="project-content"><div><p class="mono project-type">CONTAINERS • DOCKER</p><h3>Containerized Portfolio</h3><p>Practised building a Docker image, running containers, mapping ports, bind mounts, volumes, networks and Docker Compose.</p><div class="tags"><span>Docker</span><span>Docker Compose</span><span>Linux</span></div></div><div class="project-links"><a href="https://github.com/developmentoperation69" target="_blank" rel="noreferrer">GitHub profile ↗</a></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number mono">PROJECT 03</span><span class="project-status status-learning"><i></i> IN PROGRESS</span></div>
+          <div class="project-content"><div><p class="mono project-type">AUTOMATION • CI/CD</p><h3>Jenkins Pipeline Learning</h3><p>Exploring Jenkins jobs and pipeline fundamentals as part of my ongoing CI/CD learning path.</p><div class="tags"><span>Jenkins</span><span>Git</span><span>CI/CD</span></div></div><div class="project-links"><a href="https://github.com/developmentoperation69" target="_blank" rel="noreferrer">GitHub profile ↗</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel"><p class="mono section-index">04 / CONTACT</p><h2>Let’s build something <span>reliable.</span></h2><p>I’m interested in junior DevOps roles, internships, and opportunities to learn from real engineering teams.</p><div class="contact-links"><a href="https://github.com/developmentoperation69" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><p class="contact-note">Replace the LinkedIn link with your personal profile URL before publishing.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">RU</span><span>Rana Usama<span class="brand-dot">.</span></span></a><p class="mono">DESIGNED & BUILT WITH PURPOSE · 2026</p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
