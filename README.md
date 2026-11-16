@@ -1,19 +1,83 @@
 # Rana Usama — DevOps Portfolio
 
-A responsive static portfolio website built with HTML, CSS and JavaScript. Prepared for deployment using Amazon S3 static website hosting.
+A responsive and professional static portfolio website built using HTML, CSS, and JavaScript. The website is hosted on Amazon S3 and delivered securely over HTTPS using Amazon CloudFront.
 
-## Files
-- `index.html` — portfolio content and page structure
-- `style.css` — responsive dark theme and layout
-- `script.js` — mobile navigation interaction
+## Live Website
 
-## Before publishing
-1. Replace the LinkedIn homepage URL in `index.html` with your personal LinkedIn profile URL.
-2. Review the project descriptions and links to ensure they reflect your current work.
-3. Do not add AWS access keys, secret keys, private keys or passwords to this repository or website.
+**HTTPS Portfolio:** https://d3ejet4eu0iofe.cloudfront.net/
 
-## Deploy to Amazon S3
-Upload all three files (`index.html`, `style.css`, `script.js`) to the root of your S3 bucket. Then enable static website hosting and configure the required public read access for website objects, following the practical instructions.
+**GitHub Repository:** https://github.com/developmentoperation69/codomax-s3-static-portfolio
 
-## Technologies
-HTML5 · CSS3 · JavaScript · Amazon S3
+## Project Overview
+
+This project demonstrates how to deploy a static website using Amazon S3 and configure Amazon CloudFront for secure HTTPS content delivery.
+
+### AWS Architecture
+
+1. Website files are stored in an Amazon S3 bucket.
+2. S3 Static Website Hosting serves the website content.
+3. Amazon CloudFront uses the S3 website endpoint as its origin.
+4. Visitors access the portfolio through the CloudFront HTTPS URL.
+
+## AWS Configuration
+
+| Configuration | Value |
+|---|---|
+| AWS Service | Amazon S3 |
+| Bucket Name | `usama-s3-portfolio-2026` |
+| AWS Region | `ap-southeast-2` (Sydney) |
+| Static Website Hosting | Enabled |
+| CDN | Amazon CloudFront |
+| Distribution ID | `E1Y4SAA0BNHTUD` |
+| HTTPS | Enabled through CloudFront |
+| AWS WAF | Not enabled |
+
+## Project Files
+
+- `index.html` — Portfolio content and page structure
+- `style.css` — Responsive dark theme and layout
+- `script.js` — Mobile navigation interaction
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Amazon S3
+- Amazon CloudFront
+- AWS Bucket Policies
+- HTTPS
+
+## Deployment Steps
+
+1. Create an Amazon S3 bucket.
+2. Enable static website hosting.
+3. Upload `index.html`, `style.css`, and `script.js`.
+4. Configure bucket permissions for public website access.
+5. Create a CloudFront distribution.
+6. Configure the S3 website endpoint as the CloudFront origin.
+7. Deploy the distribution and access the website using its HTTPS URL.
+
+## Security Considerations
+
+- Public website access is limited to reading website objects.
+- AWS credentials and secret keys are not stored in this repository.
+- CloudFront provides HTTPS access to the website.
+- AWS WAF was not enabled for this learning project.
+
+## Learning Outcomes
+
+Through this project, I practiced:
+
+- Creating and configuring S3 buckets.
+- Uploading and managing S3 objects.
+- Understanding bucket policies and public access.
+- Hosting a static website on Amazon S3.
+- Configuring CloudFront distributions.
+- Understanding CDN-based content delivery.
+- Deploying a website with HTTPS.
+
+---
+
+**Created by Rana Usama**  
+Junior DevOps Engineer | Faisalabad, Pakistan
